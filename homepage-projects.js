@@ -22,7 +22,7 @@ const projects = [
     {
     title: "Absolute Collagen",
     category: "UX/UI Design, E-commerce",
-    image: "/absolute collagen/ac-mockup-far.jpg",
+    image: "absolute collagen/ac-mockup-far.jpg",
     size: "large",
     link: "absolute collagen/absolute-collagen.html",
     theme: "dark" // white text
