@@ -7,7 +7,7 @@ const projects = [
 
     
     {
-        image: "", // Original image path
+        image: "bowls.jpg", // Original image path
         size: "half",
     },
 
@@ -25,17 +25,17 @@ const projects = [
 
     },
 
+    
+    {
+        image: "apron.jpg",
+        size: "half", 
+    },
 
     
      {
         image: "asparagus.jpg", // Original image path
         size: "half",
     }, 
-    
-    {
-        image: "apron.jpg",
-        size: "half", 
-    },
 
     
   
