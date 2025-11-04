@@ -1,45 +1,40 @@
 // PHOTOES FOR DARKER TALES PROJECT
 const projects = [
- 
+   {
+        image: "logo.jpg", // Original image path
+        size: "half",
+    },
 
     
-         {
-        image: "artsider_phone.jpg", // Original image path
-        size: "half",
-    },
-
-      
-  {
-        image: "artsider_cards.jpg", // Original image path
-        size: "half",
-    },
-  
-  
-
     {
-        image: "artsider_website.jpg",
-        size: "large", 
-    },
-
-     {
-        image: "artsider_stand_green.jpg", // Original image path
+        image: "", // Original image path
         size: "half",
     },
+
+    
    {
-        image: "artsider_sign.jpg", // Original image path
+        image: "socials.jpg", // Original image path
         size: "half",  
 
     },
 
-    {
-        image: "pattern.jpg",
-        size: "large", 
+ 
+   {
+        image: "stickers.mp4", // Original image path
+        size: "half",  
+
     },
 
 
+    
+     {
+        image: "asparagus.jpg", // Original image path
+        size: "half",
+    }, 
+    
     {
-        image: "artsider_socialmedia.jpg",
-        size: "large", 
+        image: "apron.jpg",
+        size: "half", 
     },
 
     
@@ -55,18 +50,35 @@ function createTiles() {
         const gridItem = document.createElement("div");
         gridItem.classList.add("grid-item", project.size); // Add size class
         
-        // Create image element
-        const img = document.createElement("img"); 
-        img.src = project.image; // Original image
-        img.loading = "lazy"; // Add lazy loading
-         
+       const ext = project.image.split('.').pop().toLowerCase();
 
-        // Append image, title, and tags to the grid item
-     
-        gridItem.appendChild(img);
+        let media;
+
+        if (ext === 'mp4') {
+            // Create video element
+            media = document.createElement("video");
+            media.src = project.image;
+            media.autoplay = true;
+            media.loop = true;
+            media.muted = true;
+            media.playsInline = true;
+            media.loading = "lazy";
+            media.style.width = "100%";
+            media.style.objectFit = "cover";
+        } else {
+            // Create image element
+            media = document.createElement("img"); 
+            media.src = project.image; // Original image
+            media.loading = "lazy"; // Add lazy loading
+        }
+
+        // Append image or video to the grid item
+        gridItem.appendChild(media);
         gridContainer.appendChild(gridItem);
     });
 }
 
-// Call the function to create tiles
-createTiles();
+document.addEventListener("DOMContentLoaded", () => {
+    createTiles();
+
+});
