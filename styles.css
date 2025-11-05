@@ -376,7 +376,11 @@ body.page-contact #navbar .nav-list li a :hover{
     padding-top: 0.6rem;
 }
 
-
+.badge{
+      width: 200px;
+  right: 0;
+  bottom: 0;
+}
 
 
 /*for js lightbox(large image ) effect */
