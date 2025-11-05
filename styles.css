@@ -346,17 +346,21 @@ body.page-contact #navbar .nav-list li a :hover{
 .header-wrapper{
     display: flex;
     flex-direction:row;
-    padding-top: 18rem;
+    gap:4rem;
+    padding-top: 20rem;
     padding-bottom: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: rem;
     padding-left: 8rem;
-    padding-right: 8rem;
+    padding-right: 6rem;
 }
 
 .header-wrapper.black{
     background-color: #000;
 }
 
+.wrapper{
+    flex-grow: 1;
+}
 
 .title {
     font-size: 4rem;
@@ -366,7 +370,7 @@ body.page-contact #navbar .nav-list li a :hover{
 }
 
 .title.white {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .subheader {
@@ -377,11 +381,14 @@ body.page-contact #navbar .nav-list li a :hover{
 }
 
 .badge{
-      width: 200px;
+    
   right: 0;
   bottom: 0;
 }
 
+.badge img{
+     width: 200px;
+}
 
 /*for js lightbox(large image ) effect */
 
