@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Artsider Foundation ",
-    category: "Branding, Charity, NGO",
+    category: "Branding, Social Media, NGO",
     image: "artsider/artsider_cards.jpg",
     size: "half",
     link: "artsider/artsider.html",
@@ -12,7 +12,7 @@ const projects = [
 
       {
     title: "Bowl'd Salad Bar",
-    category: "Branding, UI/UX",
+    category: "Branding, Packaging",
     image: "bowld/asparagus.jpg",
     size: "half",
     link: "bowld/bowld.html",

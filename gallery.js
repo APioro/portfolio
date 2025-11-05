@@ -1,9 +1,12 @@
 const mediaItems = [
+
+  { type: "image", file: "labs/octo-logo.jpg" },
+  { type: "image", file: "labs/octo.jpg" },
   { type: "image", file: "labs/degree-show-catalogue.jpg" },
   { type: "video", file: "labs/blender-animation.mp4" },
-  { type: "image", file: "labs/book-far.jpg" },
+
   { type: "image", file: "labs/book-closeup.jpg" },
-  { type: "image", file: "labs/overlap.jpg" }, // example video
+ // example video
   { type: "image", file: "labs/shrine.jpg" }
 ];
 
