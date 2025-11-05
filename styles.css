@@ -345,7 +345,7 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .header-wrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     padding-top: 18rem;
     padding-bottom: 4rem;
     margin-bottom: 6rem;
