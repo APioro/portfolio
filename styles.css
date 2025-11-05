@@ -346,17 +346,27 @@ body.page-contact #navbar .nav-list li a :hover{
 .header-wrapper{
     display: flex;
     flex-direction: column;
+    padding-top: 18rem;
+    padding-bottom: 4rem;
     margin-bottom: 6rem;
     padding-left: 8rem;
     padding-right: 8rem;
 }
 
+.header-wrapper.black{
+    background-color: #000;
+}
+
 
 .title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     padding-bottom: 0rem;
     padding-top:3rem;
+}
+
+.title.white {
+  color: white;
 }
 
 .subheader {
