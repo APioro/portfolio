@@ -1,12 +1,12 @@
-const text = `I'M ANGELIKA PIÓRO,
-graphic designer 
+const text = `Designing brands
+for the unapologetically 
 `;
 const highlightWords = [
-    { text: "psychology lover", style: "highlight-sensible" }, 
-    { text: "still figuring it out", style: "highlight-creative" }, 
+    { text: "honest", style: "highlight-sensible" }, 
+    { text: "weird", style: "highlight-creative" }, 
     { text: "whimsical", style: "highlight-fun" },
-    { text: "dark", style: "highlight-boonka" },
-    { text: "unique.", style: "highlight-lizzanka" }
+    { text: "devoted", style: "highlight-boonka" },
+    { text: "original", style: "highlight-lizzanka" }
 ]; 
 let currentHighlightWordIndex = 0;
 let index = 0;

@@ -346,12 +346,12 @@ body.page-contact #navbar .nav-list li a :hover{
 .header-wrapper{
     display: flex;
     flex-direction:row;
+    justify-items:flex-end;
     gap:4rem;
-    padding-top: 20rem;
+    padding-top: 14rem;
     padding-bottom: 4rem;
-    margin-bottom: rem;
-    padding-left: 8rem;
-    padding-right: 6rem;
+    padding-left: 4rem;
+    padding-right: 4.6rem;
 }
 
 .header-wrapper.black{
@@ -360,10 +360,12 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .wrapper{
     flex-grow: 1;
+    min-height: 300px;
 }
 
 .title {
-    font-size: 4rem;
+    line-height: 5*1.2rem;
+    font-size: 5rem;
     font-weight: bold;
     padding-bottom: 0rem;
     padding-top:3rem;
@@ -381,13 +383,17 @@ body.page-contact #navbar .nav-list li a :hover{
 }
 
 .badge{
-    
-  right: 0;
-  bottom: 0;
+    margin-left: auto;      /* push to right */
+    display: flex;          /* make badge a flex container */
+    flex-direction: column; /* vertical stacking */
+    justify-content: flex-end; /* push image to bottom of badge div */
+  
 }
 
 .badge img{
-     width: 200px;
+     width: 260px;
+     bottom: 0;
+     padding-bottom: 10px;
 }
 
 /*for js lightbox(large image ) effect */
@@ -899,12 +905,13 @@ section {
 
 /* Text block */
 #typing-text {
-    font-size: 6.5rem; /* Adjust text size */
-    font-weight: 700;
-    max-width: 1200px; /* Constrain the block width */
-    width: 100%; /* Make it responsive */
-    line-height: 1.2; /* Space between lines */
-    text-align: center; /* Text starts from the left */
+    line-height: 4*1.2rem;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 0rem;
+    padding-top:3rem;
+
+    color:#fff;
     white-space: pre-wrap; /* Ensure text wraps to the next line */
 }
 
