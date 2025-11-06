@@ -1,24 +1,21 @@
 // PHOTOES FOR DARKER TALES PROJECT
 const projects = [
     {
-        image: "ac-mockup.jpg", // Original image path
+        image: "ac-mockup-closeup.png", // Original image path
         size: "half",  
     },
+
     {
         image: "ac-nav.mp4", // Original image path
         size: "half",
     },
     {
-        image: "ac-old-vs-new.png", // Original image path
-        size: "large",
-    },
-    {
-        image: "branding-ac.png",
+        image: "product_page.jpg",
         size: "half", 
     },
 
     {
-        image: "ac-review.jpg",
+        image: "info_ac_square.mp4",
         size: "half", 
     },
     // Add more projects as needed...
