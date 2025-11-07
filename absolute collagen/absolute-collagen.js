@@ -18,6 +18,11 @@ const projects = [
         image: "info_ac_square.mp4",
         size: "half", 
     },
+
+      {
+        image: "ac_type.jpg",
+        size: "half", 
+    },
     // Add more projects as needed...
 ];
 
