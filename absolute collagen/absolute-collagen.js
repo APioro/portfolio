@@ -19,8 +19,13 @@ const projects = [
         size: "half", 
     },
 
-      {
+    {
         image: "ac_type.jpg",
+        size: "half", 
+    },
+
+    {
+        image: "assets_dark.jpg",
         size: "half", 
     },
     // Add more projects as needed...
