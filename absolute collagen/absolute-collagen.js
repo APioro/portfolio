@@ -9,6 +9,11 @@ const projects = [
         image: "ac-nav.mp4", // Original image path
         size: "half",
     },
+
+    {
+
+    },
+
     {
         image: "product_page.jpg",
         size: "half", 
