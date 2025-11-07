@@ -827,7 +827,7 @@ section {
     line-height: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
-   flex: 1;
+    flex: 1;
     
     
 
@@ -891,6 +891,30 @@ section {
   transform: translateY(0);
 }
 
+
+/* AC styling section */
+
+.project-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0rem;
+    padding-bottom: 3.4rem;
+
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    flex: 1;
+    
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0rem;
+    padding-top:0.6rem;
+    
+}
 
 
 
