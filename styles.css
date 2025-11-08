@@ -174,7 +174,7 @@ header {
 
  @media (max-width: 768px) {
     .logo img{
-    max-height: 34px;         /* Set a relative height that fits your navbar */
+    max-height: 24px;         /* Set a relative height that fits your navbar */
     width: auto;            /* Keep aspect ratio */
     padding-top: 0px;
     margin-left:0px;
@@ -358,7 +358,7 @@ body.page-contact #navbar .nav-list li a :hover{
         display: flex;
         /* flex-direction:row; */
         justify-items:flex-end;
-        padding-top: 5rem;
+        padding-top: 2rem;
         /* padding-bottom: 2rem; */
         padding-left: 1rem;
         /* padding-right: 4.6rem; */
@@ -458,7 +458,7 @@ body.page-contact #navbar .nav-list li a :hover{
 @media (max-width: 768px) {
     .badge img{
         width: auto;
-        max-height: 180px;
+        max-height: 130px;
     }
    
 }
