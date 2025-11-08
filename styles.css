@@ -170,10 +170,6 @@ header {
     
 }
 
-body.page-contact #navbar .logo img {
-  content: url('/logo/initials-logo-white.png');
-}
-
 
 
  @media (max-width: 768px) {
