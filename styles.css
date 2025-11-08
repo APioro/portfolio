@@ -162,7 +162,7 @@ header {
 }
 
 #navbar .logo img {
-    content: url('/logo/initials-logo-black.png');
+    
     max-height: 42px;         /* Set a relative height that fits your navbar */
     width: auto;            /* Keep aspect ratio */
     padding-top: 0px;
