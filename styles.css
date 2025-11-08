@@ -356,7 +356,6 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .wrapper{
     flex-grow: 1;
-    min-height: 300px;
 }
 
 .title {
@@ -924,6 +923,7 @@ section {
 
 /* Text block */
 #typing-text {
+  
     line-height: 4*1.2rem;
     font-size: 4rem;
     font-weight: bold;
