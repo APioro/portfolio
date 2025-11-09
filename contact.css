@@ -10,7 +10,7 @@
 }
 
 #contact-wrapper{
-    color: #f7f5f8;
+    color: #000000;
     grid-row: 3;
     grid-column: 2 / 6;
     display: flex;
@@ -18,16 +18,22 @@
 }
 
 #contact{
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 #contact-wrapper a{
+  
     text-decoration: none;
-    color:#f7f5f8;
+    color:#000000;
     position: relative; /* <-- makes pseudo-element position relative to this link */
 }
 
+#contact-wrapper p{
+  margin-bottom: 0;
+  margin-top: 0.2rem;
+}
 
 
 #contact-wrapper a::after {
@@ -38,9 +44,9 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #fbfbfb;
+  background-color: #0f0f0f;
   transform: scaleX(0);
-    transform-origin: left;
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 
@@ -115,6 +121,17 @@
   left: -10%;        /* adjust until 1/4 of badge hangs over the right */
   width: 20%;         /* scales with the image */
   height: auto;
+}
+
+.white-bg
+{ grid-row: 3;
+  grid-column: 1/15;
+
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  background: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
 /*
