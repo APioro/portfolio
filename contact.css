@@ -8,6 +8,13 @@
   margin: 0 auto;    
  
 }
+@media (max-width: 768px) {
+    #grid-container-about-me{
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1.6rem;
+    }
+   
+}
 
 #contact-wrapper{
     color: #000000;
@@ -144,6 +151,91 @@
 
 .image-2 img{
   max-width: 100%;
+}
+
+/* ------------------------ */
+/* MOBILE / RESPONSIVE BELOW */
+/* ------------------------ */
+@media (max-width: 768px) {
+  /* Stack everything vertically */
+  #grid-container-about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Move the image before the text */
+  #image-about-me {
+    order: -1;
+  }
+
+  /* Keep spacing around text */
+  .wrapper-vertical {
+    padding: 0 1.6rem 3rem 1.6rem;
+  }
+
+  /* Main image full width */
+  #image-about-me img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Stack body paragraphs vertically */
+  .wrapper-horizontal {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* ----- FIX 1: Badge scaling ----- */
+  .image-wrapper {
+    position: relative;
+  }
+
+  .image-wrapper img.badge {
+    width: 25vw;       /* scales relative to viewport width */
+    max-width: 100px;  /* sets a reasonable upper limit */
+    min-width: 60px;   /* prevents it from getting too tiny */
+    height: auto;
+    top: -10%;
+    left: -10%;        /* top-left corner */
+  }
+
+  /* Adjust typography for smaller screens */
+  .title-about-me {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .body-about-me {
+    font-size: 1rem;
+  }
+
+  /* ----- FIX 2: Prevent links from overlapping image ----- */
+  .white-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 4rem 0 8rem 0;
+    position: relative;
+    z-index: 1; /* brings this section above previous content */
+  }
+
+  #contact-wrapper {
+    width: 100%;
+    padding: 0 1.6rem;
+    order: 2; /* make sure it stays after image */
+  }
+
+  .image-2 {
+    width: 100%;
+    order: 1; /* ensure image appears before links */
+  }
+
+  .image-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /*
