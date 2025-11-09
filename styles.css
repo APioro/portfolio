@@ -173,7 +173,7 @@ header {
 
 
  @media (max-width: 768px) {
-    #navbar.logo img{
+    #navbar .logo img {
     max-height: 24px;         /* Set a relative height that fits your navbar */
     width: auto;            /* Keep aspect ratio */
     padding-top: 0px;
