@@ -76,6 +76,7 @@
   display: flex;
   flex-direction: row;
   gap:6rem;
+  margin-bottom: 3.2rem;
 
 }
 
@@ -157,7 +158,7 @@
 /* MOBILE / RESPONSIVE BELOW */
 /* ------------------------ */
 @media (max-width: 768px) {
-  /* Stack everything vertically */
+  /* Stack layout vertically */
   #grid-container-about-me {
     display: flex;
     flex-direction: column;
@@ -166,50 +167,69 @@
   /* Move the image before the text */
   #image-about-me {
     order: -1;
+    padding: 0 1.6rem; /* same margin as text */
   }
 
   /* Keep spacing around text */
   .wrapper-vertical {
-    padding: 0 1.6rem 3rem 1.6rem;
+     padding: 0 1.6rem 3rem 1.6rem;
+     display: contents; 
+     
   }
 
-  /* Main image full width */
-  #image-about-me img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Stack body paragraphs vertically */
+  /* Body text stacking */
   .wrapper-horizontal {
     flex-direction: column;
     gap: 2rem;
   }
 
-  /* ----- FIX 1: Badge scaling ----- */
-  .image-wrapper {
-    position: relative;
-  }
-
-  .image-wrapper img.badge {
-    width: 25vw;       /* scales relative to viewport width */
-    max-width: 100px;  /* sets a reasonable upper limit */
-    min-width: 60px;   /* prevents it from getting too tiny */
+  /* Main image full width */
+  #image-about-me img,
+  .image-2 img {
+    width: 100%;
     height: auto;
-    top: -10%;
-    left: -10%;        /* top-left corner */
+    display: block;
   }
 
-  /* Adjust typography for smaller screens */
+  /* Give second image same margin */
+  .image-2 {
+    padding: 0 1.6rem;
+  }
+
+  .image-wrapper {
+  position: relative;
+  margin-top: 2.2rem;
+  }
+
+
+  #image-about-me .image-wrapper img.badge {
+    width: 20vw;
+    max-width: 100px;
+    min-width: 40px;
+    top: -8%;
+    right: -4%;
+    left: auto;
+  }
+
+
   .title-about-me {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2.8rem, 8vw, 3rem);
+    order: -2;    
+    padding: 0 1.6rem;
   }
 
   .body-about-me {
     font-size: 1rem;
+    padding: 0 1.6rem;
+
+  }
+    .body-about-me:nth-of-type(2) {
+    margin-bottom: 2rem; /* adjust as you like */
   }
 
-  /* ----- FIX 2: Prevent links from overlapping image ----- */
+/* ------------------------ */
+      /* WHITE SECTION */
+/* ------------------------ */
   .white-bg {
     display: flex;
     flex-direction: column;
@@ -217,135 +237,17 @@
     background: #fff;
     padding: 4rem 0 8rem 0;
     position: relative;
-    z-index: 1; /* brings this section above previous content */
+    z-index: 1;
   }
 
   #contact-wrapper {
+    margin-top: 2rem;
     width: 100%;
     padding: 0 1.6rem;
-    order: 2; /* make sure it stays after image */
+    order: 2;
   }
 
   .image-2 {
-    width: 100%;
-    order: 1; /* ensure image appears before links */
-  }
-
-  .image-2 img {
-    width: 100%;
-    height: auto;
-    display: block;
+    order: 1;
   }
 }
-
-/*
-
-
-#get-in-touch-details-1{
-    font-family:monospace;
-    grid-row: 2;
-    grid-column: 2 / 6;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-
-#get-in-touch-details-2{
-    font-family:monospace;
-    grid-row: 2;
-    grid-column: 6 / 10;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 1rem;
-  
-    line-height: 1.8;
-}
-
-#get-in-touch-details-3{
-    display: inline-flex;
-    gap: 10px;
-    font-family:monospace;
-    grid-row: 2;
-    grid-column: 10 / 14;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.8;
-
-}
-
-
-
-@media (max-width: 768px) {
-  #get-in-touch-title {
-    grid-column: 2 / 14;
-    font-size: clamp(2rem, 9vw, 3rem);
-    line-height: 1.4;
-  }
-
-  #get-in-touch-subheader{
-    grid-column: 2 / 14;
-    font-family: 'Urbanist';
-    font-size: clamp(0.7rem, 4vw, 3rem);
-    }
-
-    #contact-wrapper{
-    font-size: 1rem;
-    grid-column: 2/14;
-    }
-
-    #about-me-header{
-    grid-row: 1;
-    grid-column: 2 / -1;
-    display: flex;
-    font-size: 1.2rem; 
-}
-
-  #get-in-touch-details-1{
-    grid-row: 4;
-    grid-column: 2 / 9;
-    font-family:monospace;
-    font-size: clamp(0.8rem, 1.3vw, 3rem);
-    }
-
-  #get-in-touch-details-2{
-    grid-row: 5;
-    grid-column: 7 / 14;
-    font-size: clamp(0.8rem, 1.3vw, 3rem);
-    text-align: right;
-    }
-
-    #get-in-touch-details-3{
-    grid-row: 6;
-    grid-column: 2 / 9;
-    font-size: clamp(0.8rem, 1.3vw, 3rem);
-    }
-
-
-
-}
-#about-me-section{
-    padding: 72px 0;
-    background-color:#f7f5f8 ;
-    grid-column: 1 / -1;
-    display: grid;            /* <— now it owns its own grid 
-    grid-template-columns: repeat(14, 1fr);
-    gap: 1.6rem;
-
-}
-
-#about-me-header{
-    font-family: 'Noto Sans';
-    color: #000000;
-    grid-row: 1;
-    grid-column: 2 / 7;
-    display: flex;
-    font-size: 1.2rem;
-    font-weight: 500;
-    align-self: end;  
-}
-
-
-*/
