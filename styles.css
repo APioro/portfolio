@@ -244,21 +244,29 @@ body.page-contact #navbar .nav-list li a :hover{
 }
 .button {
 
-    font-family: Urbanist;
-    font-size: 20px;
-    color: #000;
-    background: transparent;   /* initial background */
-    text-decoration: none;     /* remove underline */
-    
-    width: fit-content;
-    display: flex;
-    padding: 15px 19px;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Noto Sans';
+    background-color: #0e0e0e;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+    font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 1.25rem 1.25rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
 
-    gap: 10px;
-
-    border: 1.4px solid #323232;
 }
 
 .button:hover,
@@ -448,7 +456,7 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .badge img{
      width: auto;
-     max-height: 215px;
+     max-height: 250px;
      height: auto;
      max-width: 100%;
      object-fit: contain;
@@ -1025,23 +1033,23 @@ section {
 
 /* For the highlighted last word "sensible" */
 .highlight-sensible {
-    color: #fede0c;
+    color: #c9ac4c;
 }
 
 .highlight-creative {
-    color: #9ac4f8;
+    color: #6d99db;
 }
 
 .highlight-fun {
-    color: #d44ef9 ;
+    color: #d09cee ;
 }
 
 .highlight-boonka {
-    color: #550a26;
+    color: #941a47;
 }
 
 .highlight-lizzanka {
-    color: #6aba01;
+    color: #778ffa;
 }
 
 .content-project {

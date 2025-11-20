@@ -67,7 +67,8 @@ function createTiles() {
     const img = document.createElement("img");
     img.src = project.image;
     img.alt = project.title;
-    img.loading = "lazy";
+
+    if(index !== 0) img.loading = "lazy";
 
     const link = document.createElement("a");
     link.href = project.link;
